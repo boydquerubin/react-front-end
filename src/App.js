@@ -10,11 +10,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route index element={<HomeScreen />} />
-        <Route path="/new-recipe" element={<NewRecipeScreen />} />
-        <Route path="/detail" element={<DetailScreen />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route index element={<HomeScreen />} />
+          <Route path="/new-recipe" element={<NewRecipeScreen />} />
+          <Route path="/detail" element={<DetailScreen />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );

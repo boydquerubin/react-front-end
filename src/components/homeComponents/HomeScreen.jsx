@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AdBanner from "./AdBanner";
+import RecipeContainer from "./RecipeContainer";
 
 const HomeScreen = () => {
   const [recipes, setRecipes] = useState([]);
@@ -24,12 +25,8 @@ const HomeScreen = () => {
   return (
     <div>
       <AdBanner />
-      <ul>
-        {recipes.map((recipe, index) => (
-          <li key={index}>{recipe.name}</li>
-        ))}
-      </ul>
       {/* Much code from Part 2 will be placed around here. Do your best! */}
+      <RecipeContainer recipes={recipes} />
     </div>
   );
 };
