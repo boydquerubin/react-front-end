@@ -50,8 +50,8 @@ const Footer = () => {
           d="M255 222L203 132.5L83.9282 338H233L331 168L427.675 338.571L317.5 338.5"
           stroke="#25AAE1"
           stroke-width="16"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </footer>
